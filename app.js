@@ -25,7 +25,8 @@ userSchema.plugin(encrypt, {secret: secret, encryptedFields:["password"]});
 const User =new mongoose.model("User", userSchema);
 
 app.get("/", function(req, res){
-    res.render("home");
+ 
+    res.render("home"); 
 });
 
 app.get("/login", function(req, res){
